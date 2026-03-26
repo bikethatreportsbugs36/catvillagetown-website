@@ -1,3 +1,4 @@
+Note: this log applies to all things hosted by them.
 2026-03-26 13:59:02.213 [DEBUG] [logManager] Starting log manager...
 2026-03-26 13:59:02.213 [INFO} [goombaShop.auth] Reminder - 1 UI item may need attention.
 2026-03-26 13:59:02.214 [DEBUG] [goombaShop.auth] Checking UI item status...
@@ -10,3 +11,53 @@
 2026-03-26 13:59:02.216 [DEBUG] [goombaShop.auth] UI item status check complete.
 2026-03-26 13:59:02.273 [DEBUG] [database] [2] New entry added for user "goomba21331" at index 1316 of file "userdata.db".
 2026-03-26 13:59:02.274 [INFO] [database] User "goomba21331" successfully registered with email "johngoomba.inlakitucloud@example.com"
+2026-03-26 13:59:02.275 [WARN] [Server.log] User with Session ID "732001" could not connect to the Server with GoombaWebUI_ErrorCode 4833 (Connection Timeout), after 10k ms. Retrying (attempt 2)...
+2026-03-26 13:59:02.376 [DEBUG] [Server.log] Retrying connection for Session ID "732001" (attempt 2)... (status:  33% 7.23 Mbps}
+2026-03-26 13:59:02.477 [DEBUG] [Server.log] Retrying connection for Session ID "732001" (attempt 2)... (status:  96% 12.45 Mbps)
+2026-03-26 13:59:02.578 [INFO] [Server.log] Connection established for Session ID "732001" on attempt 2.
+2026-03-26 13:59:03.000 [debug - notif] [goombaWebUI] New notification event -deails below
+    [0, goombaWebUI:notification.toast]
+        ID: 1
+        To User ID 712314
+        Type: Toast
+            Styles: 4 - all below
+                BackgroundColor: #333333
+                    Gradient - 3
+                        StartColor: #333333
+                        EndColor: #555555
+                        Angle: 45
+                TextColor: #FFFFFF
+                BorderColor: #FF0000
+                Font: Arial, 14pt, Bold
+            Message - Somebody just bought your item "Gummy bears (100g)" for format_color(priceColor, $4.99!)
+            Clickable - Yes
+                Click Action - Open URL: https://goombashop.com/orders/12345
+            Duration: 5000 ms
+    [1, goombaWebUI:notification.toast]
+        ID: 2
+        To User ID 910311
+        Type: Toast
+            Styles: 4 - all below
+                BackgroundColor: #333333
+                    Gradient - 3
+                        StartColor: #333333
+                        EndColor: #555555
+                        Angle: 45
+                TextColor: #FFFFFF
+                BorderColor: #FF0000
+                Font: Arial, 14pt, Bold
+            Message - Your item "Gummy bears (100g)" has been shipped!
+            Clickable - Yes
+                Click Action - Open URL: https://goombashop.com/orders/12345/track
+            Duration: 5000 ms
+2026-03-26 13:59:03.001 [DEBUG] [goombaWebUI] Notification event processed and displayed to user.
+2026-03-26 13:59:03.002 [DEBUG] [goombaWebUI] Cleaning up expired notifications...
+2026-03-26 13:59:03.003 [DEBUG] [goombaWebUI] Expired notifications removed from display and memory.
+2026-03-26 13:59:03.004 [DEBUG] [goombaWebUI] Notification cleanup complete.
+2026-03-26 13:59:03.022 [FATAL - SERVICE CRASH] [ServerLog] The service [PageHandler] has crashed. Crash Details Below.
+    [0, CrashHandler]
+    [1, goombashop.html]
+        [0, RequestAmount]
+            
+        [1, DataBaseEntriesLast20minutes]
+    [2, P1, 0x231f03f2]
